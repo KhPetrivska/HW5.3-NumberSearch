@@ -1,6 +1,6 @@
 'use strict';
 
-let result = [];
+const result = [];
 const n = prompt('Enter number N.');
 if ( n === null){
     alert('You canceled the input.');
@@ -14,8 +14,10 @@ if ( n === null){
     const smallestNum = 1;
     const biggerstNum = 100;
     for ( let i = smallestNum; i <= biggerstNum ; i++ ){
-        if (i ** 2 < n){
+        if (i ** 2 <= n){
         result.push(i);
+         }else{
+            break;
         }
     }
     console.log(result);
