@@ -8,7 +8,7 @@ if ( n === null){
     alert('Your input is empty.');
 } else if ( isNaN(n) ){
     alert('Input must be a number.');
-} else if ( !Number.isInteger(n) ){
+} else if ( !Number.isInteger(Number(n)) ){
     alert('Must be an integer number.') ;
 } else {
     const smallestNum = 1;
@@ -18,6 +18,5 @@ if ( n === null){
         result.push(i);
         }
     }
-
     console.log(result);
     }
